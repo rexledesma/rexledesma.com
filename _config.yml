@@ -46,7 +46,6 @@ pandoc:
     - from: 'markdown+tex_math_single_backslash'
     - filter: 'pandoc-sidenote'
 plugins:
-  - jekyll-last-modified-at
   - jekyll-minifier
   - jekyll-pandoc
   - jekyll-seo-tag
