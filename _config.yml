@@ -4,27 +4,27 @@
 author:
   name: Rex Ledesma
   url: "https://rexledesma.com"
-  twitter: _rexledesma
+  twitter: rexrledesma
 baseurl: ""
 url: "https://rexledesma.com"
 
 # jekyll-seo-tag
 twitter:
-  username: _rexledesma
+  username: rexrledesma
   card: summary_large_image
 logo: /assets/images/icons/logo.png
 social:
   name: Rex Ledesma
   links:
     - https://github.com/rexledesma
-    - https://twitter.com/_rexledesma
+    - https://twitter.com/rexrledesma
     - https://www.facebook.com/andover
     - https://www.goodreads.com/rexledesma
     - https://www.linkedin.com/in/rexledesma
     - https://www.strava.com/athletes/rexledesma
     - https://open.spotify.com/user/125062534
     - https://rexledesma.substack.com
-    - https://instagram.com/rexypooh
+    - https://instagram.com/rexrledesma
 defaults:
   - scopes:
       path: ""
