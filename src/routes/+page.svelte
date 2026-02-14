@@ -20,7 +20,7 @@
 				>. Before, I was an engineer at <a href="https://www.dagster.io">Dagster Labs</a>.
 			</p>
 			<p>
-				I write <a href="https://rexledesma.substack.com">referents</a>, a personal newsletter in
+				I write <a href="https://rexledesma.substack.com">Referents</a>, a personal newsletter in
 				the space of technology and immigration law. My work advocating for high-skilled immigration
 				reform has been recognized by <a href="https://fwd.us">FWD.us</a> and the
 				<a href="https://x.com/VP46Archive/status/1669343317145051137"
@@ -36,15 +36,15 @@
 			<li>
 				<a href="https://rexledesma.substack.com/p/forgotten-dreams"
 					>Forgotten Dreams Beyond DACA</a>
-				<em class="text-gray-500">(December 2022)</em>
+				<em class="text-gray-500">(Referents, December 2022)</em>
 			</li>
 			<li>
 				<a href="https://rexledesma.substack.com/p/reinterpretations-of-irca"
-					>Reinterpretations of IRCA</a> <em class="text-gray-500">(December 2022)</em>
+					>Reinterpretations of IRCA</a> <em class="text-gray-500">(Referents, December 2022)</em>
 			</li>
 			<li>
 				<a href="https://rexledesma.substack.com/p/the-journey-before-the-law"
-					>The Journey Before the Law</a> <em class="text-gray-500">(October 2022)</em>
+					>The Journey Before the Law</a> <em class="text-gray-500">(Referents, October 2022)</em>
 			</li>
 		</ul>
 	</div>
