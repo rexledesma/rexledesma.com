@@ -31,6 +31,23 @@
 	</div>
 
 	<div class="mt-12 space-y-1">
+		<h2 class="text-lg font-semibold">Projects</h2>
+		<ul class="list-inside list-disc">
+			<li>
+				<a href="https://dagster.io">Dagster</a>: An orchestration platform for the development,
+				production, and observation of data assets.
+				<em class="text-gray-500"><a href="https://github.com/dagster-io/dagster">GitHub</a></em>
+			</li>
+			<li>
+				<a href="https://foodcoop.news">Foodcoop News</a>: Stay in the loop with the Park Slope Food
+				Coop.
+				<em class="text-gray-500"
+					><a href="https://github.com/rexledesma/foodcoop.news">GitHub</a></em>
+			</li>
+		</ul>
+	</div>
+
+	<div class="mt-12 space-y-1">
 		<h2 class="text-lg font-semibold">Selected Writing</h2>
 		<ul class="list-inside list-disc">
 			<li>
