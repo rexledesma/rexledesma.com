@@ -27,6 +27,9 @@
 					>former presidential administration</a
 				>.
 			</p>
+			<p>
+			    I'm also running for the 2026 board of directors election at the Park Slope Food Coop. Here is my <a href="https://rexledesma.substack.com/p/running-for-the-2026-park-slope-food">candidate statement</a>.
+			</p>
 		</div>
 	</div>
 
