@@ -1,5 +1,129 @@
 <script lang="ts">
 	import SEO from '$lib/components/SEO.svelte';
+
+	type Artifact = {
+		id: string;
+		title: string;
+		href: string;
+		year: number;
+		sortDate: string;
+		meta: string;
+		metaLinks?: { label: string; href: string }[];
+	};
+
+	const artifacts: Artifact[] = [
+		{
+			id: 'dagster',
+			title: 'Dagster',
+			href: 'https://dagster.io',
+			year: 2024,
+			sortDate: '2024-10-01',
+			meta: 'Project, Dagster Labs, October 2024',
+			metaLinks: [{ label: 'GitHub', href: 'https://github.com/dagster-io/dagster' }]
+		},
+		{
+			id: 'foodcoop-news',
+			title: 'Foodcoop News',
+			href: 'https://foodcoop.news',
+			year: 2026,
+			sortDate: '2026-01-01',
+			meta: 'Project, Park Slope Food Coop, January 2026',
+			metaLinks: [{ label: 'GitHub', href: 'https://github.com/rexledesma/foodcoop.news' }]
+		},
+		{
+			id: 'forgotten-dreams',
+			title: 'Forgotten Dreams Beyond DACA',
+			href: 'https://rexledesma.substack.com/p/forgotten-dreams',
+			year: 2022,
+			sortDate: '2022-12-01',
+			meta: 'Writing, Referents, December 2022'
+		},
+		{
+			id: 'reinterpretations-irca',
+			title: 'Reinterpretations of IRCA',
+			href: 'https://rexledesma.substack.com/p/reinterpretations-of-irca',
+			year: 2022,
+			sortDate: '2022-12-01',
+			meta: 'Writing, Referents, December 2022'
+		},
+		{
+			id: 'journey-before-law',
+			title: 'The Journey Before the Law',
+			href: 'https://rexledesma.substack.com/p/the-journey-before-the-law',
+			year: 2022,
+			sortDate: '2022-10-01',
+			meta: 'Writing, Referents, October 2022'
+		},
+		{
+			id: 'dagster-catalog',
+			title: 'Dagster+ Catalog: A New Built-in Asset Library',
+			href: 'https://dagster.io/blog/dagster-plus-calatog-a-new-built-in-asset-library',
+			year: 2024,
+			sortDate: '2024-04-01',
+			meta: 'Media, Dagster Labs, April 2024',
+			metaLinks: [{ label: 'Livestream', href: 'https://www.youtube.com/watch?v=_ZCYHUOd56o' }]
+		},
+		{
+			id: 'orchestrating-dbt',
+			title: 'Orchestrating dbt with Dagster',
+			href: 'https://dagster.io/blog/orchestrating-dbt-with-dagster',
+			year: 2023,
+			sortDate: '2023-08-01',
+			meta: 'Media, Dagster Labs, August 2023',
+			metaLinks: [{ label: 'Livestream', href: 'https://www.youtube.com/watch?v=yv97Xgbwwmo' }]
+		},
+		{
+			id: 'daca-anniversary',
+			title: 'Celebrating the 11th Anniversary of DACA with Kamala Harris',
+			href: 'https://x.com/VP46Archive/status/1669343317145051137',
+			year: 2023,
+			sortDate: '2023-06-01',
+			meta: 'Media, Office of the VP, June 2023',
+			metaLinks: [
+				{
+					label: 'ABC News',
+					href: 'https://abcnews.go.com/Politics/daca-turns-11-white-house-calls-immigration-reform/story?id=100084798'
+				},
+			]
+		},
+		{
+			id: 'alumni-profile',
+			title: 'Alumni Profile: Rex Ledesma',
+			href: 'https://www.jkcf.org/our-stories/december-2022-newsletter/',
+			year: 2022,
+			sortDate: '2022-12-01',
+			meta: 'Media, Jack Kent Cooke Foundation, December 2022'
+		},
+		{
+			id: 'pricing-philosophy',
+			title: 'Our Pricing Philosophy for Dagster Cloud',
+			href: 'https://web.archive.org/web/20221005014539/https://dagster.io/blog/dagster-cloud-pricing-philosophy',
+			year: 2022,
+			sortDate: '2022-08-01',
+			meta: 'Media, Dagster Labs, August 2022',
+			metaLinks: [{ label: 'Livestream', href: 'https://www.youtube.com/watch?v=70c84LDZuzQ' }]
+		}
+	];
+
+	const sortedArtifacts = artifacts
+		.slice()
+		.sort((a, b) => new Date(b.sortDate).getTime() - new Date(a.sortDate).getTime());
+
+	function shouldShowYear(index: number) {
+		if (index === 0) {
+			return true;
+		}
+
+		return sortedArtifacts[index - 1].year !== sortedArtifacts[index].year;
+	}
+
+	function resolveHref(href: string) {
+		if (/^[a-zA-Z][a-zA-Z\d+\-.]*:/.test(href)) {
+			return href;
+		}
+
+		return new URL(href, 'https://rexledesma.com').toString();
+	}
 </script>
 
 <SEO
@@ -9,7 +133,7 @@
 
 <div class="mx-auto max-w-2xl px-6 py-12">
 	<div class="space-y-6">
-		<h1 class="text-2xl font-bold">Rex Ledesma</h1>
+		<h1 class="text-xl font-semibold">Rex Ledesma</h1>
 		<img src="/assets/images/rexledesma.jpg" alt="Rex Ledesma" class="w-48" />
 		<div class="space-y-4 leading-relaxed">
 			<p>Hi, I'm Rex. I'm a technologist, engineer, and writer.</p>
@@ -28,110 +152,58 @@
 				>.
 			</p>
 			<p>
-			    I'm also running for the 2026 board of directors election at the Park Slope Food Coop. Here is my <a href="https://rexledesma.substack.com/p/running-for-the-2026-park-slope-food">candidate statement</a>.
+				I'm also running for the 2026 board of directors election at the Park Slope Food Coop. Here
+				is my <a href="https://rexledesma.substack.com/p/running-for-the-2026-park-slope-food"
+					>candidate statement</a
+				>.
+			</p>
+			<p>
+				Previously, I worked at <a href="https://airbnb.com">Airbnb</a>,
+				<a href="https://asana.com/">Asana</a>, and <a href="https://facebook.com">Facebook</a>.
+				Prior to that, I graduated from the University of Maryland
+				<em>summa cum laude</em>
+				with honors as a
+				<a href="https://www.jkcf.org/our-scholarships/college-scholarship-program/"
+					>Jack Kent Cooke Scholar</a
+				>. I was a teaching assistant for classes in machine learning and algorithms and was
+				director of Bitcamp (<a href="https://2017.bit.camp/">2017</a>,
+				<a href="https://2018.bit.camp/">2018</a>).
+			</p>
+			<p>
+				My other interests include reading, running, and cycling. I run for <a
+					href="https://centralparktc.org/">Central Park Track Club</a>
+				and I work at the <a href="https://www.foodcoop.com/">Park Slope Food Coop</a>.
 			</p>
 		</div>
 	</div>
 
-	<div class="mt-12 space-y-1">
-		<h2 class="text-lg font-semibold">Projects</h2>
-		<ul class="list-inside list-disc">
-			<li>
-				<a href="https://dagster.io">Dagster</a>: An orchestration platform for the development,
-				production, and observation of data assets.
-				<em class="text-gray-500"><a href="https://github.com/dagster-io/dagster">GitHub</a></em>
-			</li>
-			<li>
-				<a href="https://foodcoop.news">Foodcoop News</a>: Stay in the loop with the Park Slope Food
-				Coop.
-				<em class="text-gray-500"
-					><a href="https://github.com/rexledesma/foodcoop.news">GitHub</a></em>
-			</li>
+	<div class="mt-12 space-y-2">
+		<h2 class="text-lg font-semibold">Artifacts</h2>
+		<ul class="border-y border-black/15">
+			{#each sortedArtifacts as artifact, index (index)}
+				<li class="border-b border-black/10 px-0 py-2 last:border-b-0">
+					<div class="flex items-baseline gap-4">
+						<div class="w-12 shrink-0 text-black/55 tabular-nums">
+							{#if shouldShowYear(index)}{artifact.year}{/if}
+						</div>
+						<div class="min-w-0 flex-1">
+							<a href={resolveHref(artifact.href)} class="text-left underline">
+								{artifact.title}
+							</a>
+							<small class="block text-black/60">
+								{artifact.meta}
+								{#if artifact.metaLinks?.length}
+									{#each artifact.metaLinks as link}
+										{' · '}
+										<a href={resolveHref(link.href)}>{link.label}</a>
+									{/each}
+								{/if}
+							</small>
+						</div>
+					</div>
+				</li>
+			{/each}
 		</ul>
-	</div>
-
-	<div class="mt-12 space-y-1">
-		<h2 class="text-lg font-semibold">Selected Writing</h2>
-		<ul class="list-inside list-disc">
-			<li>
-				<a href="https://rexledesma.substack.com/p/forgotten-dreams"
-					>Forgotten Dreams Beyond DACA</a>
-				<em class="text-gray-500">(Referents, December 2022)</em>
-			</li>
-			<li>
-				<a href="https://rexledesma.substack.com/p/reinterpretations-of-irca"
-					>Reinterpretations of IRCA</a> <em class="text-gray-500">(Referents, December 2022)</em>
-			</li>
-			<li>
-				<a href="https://rexledesma.substack.com/p/the-journey-before-the-law"
-					>The Journey Before the Law</a> <em class="text-gray-500">(Referents, October 2022)</em>
-			</li>
-		</ul>
-	</div>
-
-	<div class="mt-12 space-y-1">
-		<h2 class="text-lg font-semibold">Media</h2>
-		<ul class="list-inside list-disc">
-			<li>
-				<a href="https://dagster.io/blog/dagster-plus-calatog-a-new-built-in-asset-library"
-					>Dagster+ Catalog: A New Built-in Asset Library</a>
-				<em class="text-gray-500"
-					>(Dagster Labs, April 2024). <a href="https://www.youtube.com/watch?v=_ZCYHUOd56o"
-						>Livestream</a
-					></em>
-			</li>
-			<li>
-				<a href="https://dagster.io/blog/orchestrating-dbt-with-dagster"
-					>Orchestrating dbt with Dagster</a>
-				<em class="text-gray-500"
-					>(Dagster Labs, August 2023). <a href="https://www.youtube.com/watch?v=yv97Xgbwwmo"
-						>Livestream</a
-					></em>
-			</li>
-			<li>
-				<a href="https://x.com/VP46Archive/status/1669343317145051137"
-					>Celebrating the 11th Anniversary of DACA with Kamala Harris</a>
-				<em class="text-gray-500"
-					>(Office of the VP, June 2023). Featured in <a
-						href="https://abcnews.go.com/Politics/daca-turns-11-white-house-calls-immigration-reform/story?id=100084798"
-						>ABC News</a
-					>, <a href="https://www.instagram.com/reel/CthBgN2rjT8/">Instagram</a></em>
-			</li>
-			<li>
-				<a href="https://www.jkcf.org/our-stories/december-2022-newsletter/"
-					>Alumni Profile: Rex Ledesma</a>
-				<em class="text-gray-500">(Jack Kent Cooke Foundation, December 2022)</em>
-			</li>
-			<li>
-				<a
-					href="https://web.archive.org/web/20221005014539/https://dagster.io/blog/dagster-cloud-pricing-philosophy"
-					>Our Pricing Philosophy for Dagster Cloud</a>
-				<em class="text-gray-500"
-					>(Dagster Labs, August 2022). <a href="https://www.youtube.com/watch?v=70c84LDZuzQ"
-						>Livestream</a
-					></em>
-			</li>
-		</ul>
-	</div>
-
-	<div class="mt-12 space-y-4 leading-relaxed">
-		<p>
-			Previously, I worked at <a href="https://airbnb.com">Airbnb</a>,
-			<a href="https://asana.com/">Asana</a>, and <a href="https://facebook.com">Facebook</a>. Prior
-			to that, I graduated from the University of Maryland
-			<em>summa cum laude</em>
-			with honors as a
-			<a href="https://www.jkcf.org/our-scholarships/college-scholarship-program/"
-				>Jack Kent Cooke Scholar</a
-			>. I was a teaching assistant for classes in machine learning and algorithms and was director
-			of Bitcamp (<a href="https://2017.bit.camp/">2017</a>,
-			<a href="https://2018.bit.camp/">2018</a>).
-		</p>
-		<p>
-			My other interests include reading, running, and cycling. I run for <a
-				href="https://centralparktc.org/">Central Park Track Club</a>
-			and I work at the <a href="https://www.foodcoop.com/">Park Slope Food Coop</a>.
-		</p>
 	</div>
 
 	<div class="mt-12 space-y-1">
