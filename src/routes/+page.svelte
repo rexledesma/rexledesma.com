@@ -31,6 +31,22 @@
 			metaLinks: [{ label: 'GitHub', href: 'https://github.com/rexledesma/foodcoop.news' }]
 		},
 		{
+			id: 'running-for-park-slope-food-coop',
+			title: 'Running for the 2026 Park Slope Food Coop Board of Directors',
+			href: 'https://rexledesma.substack.com/p/running-for-the-2026-park-slope-food',
+			year: 2026,
+			sortDate: '2026-02-01',
+			meta: 'Media, Referents, February 2026'
+		},
+		{
+			id: 'beginning-again',
+			title: 'Beginning Again',
+			href: 'https://rexledesma.substack.com/p/beginning-again',
+			year: 2025,
+			sortDate: '2025-06-01',
+			meta: 'Media, Referents, June 2025'
+		},
+		{
 			id: 'forgotten-dreams',
 			title: 'Forgotten Dreams Beyond DACA',
 			href: 'https://rexledesma.substack.com/p/forgotten-dreams',
