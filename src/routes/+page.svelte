@@ -60,7 +60,21 @@
 			href: 'https://rexledesma.substack.com/p/reinterpretations-of-irca',
 			year: 2022,
 			sortDate: '2022-12-01',
-			meta: 'Writing, Referents, December 2022'
+			meta: 'Writing, Referents, December 2022',
+			metaLinks: [
+				{
+					label: 'r/DACA',
+					href: 'https://www.reddit.com/r/DACA/comments/zblm00/new_legal_scholarship_says_state_entities_like/'
+				},
+				{
+					label: 'r/ucla',
+					href: 'https://www.reddit.com/r/ucla/comments/zcig5j/new_legal_scholarship_from_ucla_says_state/'
+				},
+				{
+					label: 'r/berkeley',
+					href: 'https://www.reddit.com/r/berkeley/comments/zctp5u/new_legal_scholarship_from_ucla_says_state/'
+				}
+			]
 		},
 		{
 			id: 'journey-before-law',
