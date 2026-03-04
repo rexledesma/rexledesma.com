@@ -36,7 +36,13 @@
 			href: 'https://rexledesma.substack.com/p/running-for-the-2026-park-slope-food',
 			year: 2026,
 			sortDate: '2026-02-01',
-			meta: 'Media, Referents, February 2026'
+			meta: 'Media, Referents, February 2026',
+			metaLinks: [
+				{
+					label: "Linewaiters' Gazette",
+					href: 'https://linewaitersgazette.com/2026/03/03/board-candidates-who-they-are-and-why-theyre-running/'
+				}
+			]
 		},
 		{
 			id: 'beginning-again',
