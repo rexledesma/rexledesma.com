@@ -179,8 +179,8 @@
 	description="Rex is an engineer, writer, and technologist."
 	type="website" />
 
-<div class="mx-auto max-w-2xl px-6 py-12">
-	<div class="space-y-6">
+<div class="mx-auto max-w-2xl px-6 py-12" data-fade-scope>
+	<div class="space-y-6" data-fade-block>
 		<h1 class="text-xl font-semibold">Rex Ledesma</h1>
 		<div class="flex items-center gap-4 sm:gap-6">
 			<img
@@ -201,14 +201,14 @@
 			</div>
 		</div>
 		<div class="space-y-4 leading-relaxed">
-			<p>Hi, I'm Rex. I'm a technologist, engineer, and writer.</p>
-			<p>
+			<p data-fade-block>Hi, I'm Rex. I'm a technologist, engineer, and writer.</p>
+			<p data-fade-block>
 				I'm currently a programming resident at the <a
 					href="https://www.recurse.com/scout/click?t=316374a3f07c2a30d4a9dfad7fa59452"
 					>Recurse Center</a
 				>. Before, I was an engineer at <a href="https://www.dagster.io">Dagster Labs</a>.
 			</p>
-			<p>
+			<p data-fade-block>
 				I write <a href="https://rexledesma.substack.com">Referents</a>, a personal newsletter in
 				the space of technology and immigration law. My work advocating for high-skilled immigration
 				reform has been recognized by <a href="https://fwd.us">FWD.us</a> and the
@@ -216,13 +216,13 @@
 					>former presidential administration</a
 				>.
 			</p>
-			<p>
+			<p data-fade-block>
 				I'm also running for the 2026 board of directors election at the Park Slope Food Coop. Here
 				is my <a href="https://rexledesma.substack.com/p/running-for-the-2026-park-slope-food"
 					>candidate statement</a
 				>.
 			</p>
-			<p>
+			<p data-fade-block>
 				Previously, I worked at <a href="https://airbnb.com">Airbnb</a>,
 				<a href="https://asana.com/">Asana</a>, and <a href="https://facebook.com">Facebook</a>.
 				Prior to that, I graduated from the University of Maryland
@@ -234,7 +234,7 @@
 				director of Bitcamp (<a href="https://2017.bit.camp/">2017</a>,
 				<a href="https://2018.bit.camp/">2018</a>).
 			</p>
-			<p>
+			<p data-fade-block>
 				My other interests include reading, running, and cycling. I run for <a
 					href="https://centralparktc.org/">Central Park Track Club</a>
 				and I work at the <a href="https://www.foodcoop.com/">Park Slope Food Coop</a>.
@@ -242,7 +242,7 @@
 		</div>
 	</div>
 
-	<div class="mt-12 space-y-2">
+	<div class="mt-12 space-y-2" data-fade-block>
 		<h2 class="text-lg font-semibold">Artifacts</h2>
 		<ul class="border-y border-black/15">
 			{#each sortedArtifacts as artifact, index (index)}

@@ -9,7 +9,15 @@
 		'h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, blockquote, figcaption, small, strong, em, label, img';
 
 	function assignFadeOrder() {
-		const elements = Array.from(document.querySelectorAll<HTMLElement>(animatedSelector));
+		const elements = Array.from(
+			document.querySelectorAll<HTMLElement>(`${animatedSelector}, [data-fade-block]`)
+		).filter((element) => {
+			if (element.hasAttribute('data-fade-block')) {
+				return true;
+			}
+
+			return !element.closest('[data-fade-scope]');
+		});
 		const sortedElements = elements.sort((a, b) => {
 			const aRect = a.getBoundingClientRect();
 			const bRect = b.getBoundingClientRect();

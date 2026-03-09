@@ -23,10 +23,25 @@ body {
 	}
 }
 
+:root {
+	--text-fade-duration: 0.5s;
+	--text-fade-stagger: 50ms;
+}
+
 body
 	:where(h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, blockquote, figcaption, small, strong, em, label, img) {
-	animation: text-fade-in 0.4s ease-out both;
-	animation-delay: calc(var(--fade-order, 0) * 40ms);
+	animation: text-fade-in var(--text-fade-duration) ease-out both;
+	animation-delay: calc(var(--fade-order, 0) * var(--text-fade-stagger));
+}
+
+[data-fade-scope]
+	:where(h1, h2, h3, h4, h5, h6, p, ul, ol, li, a, blockquote, figcaption, small, strong, em, label, img) {
+	animation: none;
+}
+
+[data-fade-block] {
+	animation: text-fade-in var(--text-fade-duration) ease-out both;
+	animation-delay: calc(var(--fade-order, 0) * var(--text-fade-stagger));
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -51,6 +66,10 @@ body
 			label,
 			img
 		) {
+		animation: none;
+	}
+
+	[data-fade-block] {
 		animation: none;
 	}
 }
