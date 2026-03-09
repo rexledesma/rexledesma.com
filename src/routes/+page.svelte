@@ -165,6 +165,14 @@
 		return sortedArtifacts[index - 1].year !== sortedArtifacts[index].year;
 	}
 
+	function shouldInsetDivider(index: number) {
+		if (index === sortedArtifacts.length - 1) {
+			return false;
+		}
+
+		return sortedArtifacts[index].year === sortedArtifacts[index + 1].year;
+	}
+
 	function resolveHref(href: string) {
 		if (/^[a-zA-Z][a-zA-Z\d+\-.]*:/.test(href)) {
 			return href;
@@ -246,7 +254,7 @@
 		<h2 class="text-lg font-semibold">Artifacts</h2>
 		<ul class="border-y border-black/15">
 			{#each sortedArtifacts as artifact, index (index)}
-				<li class="border-b border-black/10 px-0 py-2 last:border-b-0">
+				<li class="relative px-0 py-2">
 					<div class="flex items-baseline gap-4">
 						<div class="w-12 shrink-0 text-black/55 tabular-nums">
 							{#if shouldShowYear(index)}{artifact.year}{/if}
@@ -266,6 +274,12 @@
 							</small>
 						</div>
 					</div>
+					{#if index < sortedArtifacts.length - 1}
+						<div
+							class={`absolute right-0 bottom-0 h-px bg-black/10 ${
+								shouldInsetDivider(index) ? 'left-16' : 'left-0'
+							}`}></div>
+					{/if}
 				</li>
 			{/each}
 		</ul>
