@@ -11,6 +11,18 @@
 		metaLinks?: { label: string; href: string }[];
 	};
 
+	const profileLinks = [
+		{ label: 'Substack', href: 'https://rexledesma.substack.com', text: '@rexledesma' },
+		{ label: 'X', href: 'https://x.com/rexrledesma', text: '@rexrledesma' },
+		{ label: 'GitHub', href: 'https://github.com/rexledesma', text: '@rexledesma' },
+		{
+			label: 'Strava',
+			href: 'https://www.strava.com/athletes/rexledesma',
+			text: '@rexledesma'
+		},
+		{ label: 'Email', href: 'mailto:rex.ledesma1@gmail.com', text: 'rex.ledesma1@gmail.com' }
+	];
+
 	const artifacts: Artifact[] = [
 		{
 			id: 'dagster',
@@ -170,7 +182,24 @@
 <div class="mx-auto max-w-2xl px-6 py-12">
 	<div class="space-y-6">
 		<h1 class="text-xl font-semibold">Rex Ledesma</h1>
-		<img src="/assets/images/rexledesma.jpg" alt="Rex Ledesma" class="w-48" />
+		<div class="flex items-center gap-4 sm:gap-6">
+			<img
+				src="/assets/images/rexledesma.jpg"
+				alt="Rex Ledesma"
+				class="w-24 shrink-0 sm:w-48" />
+			<div class="min-w-0 flex-1 pt-1">
+				<ul class="space-y-1">
+					{#each profileLinks as link}
+						<li class="flex items-baseline gap-3 leading-snug">
+							<div class="w-18 shrink-0 text-black/55">{link.label}</div>
+							<div class="min-w-0 flex-1">
+								<a href={link.href}>{link.text}</a>
+							</div>
+						</li>
+					{/each}
+				</ul>
+			</div>
+		</div>
 		<div class="space-y-4 leading-relaxed">
 			<p>Hi, I'm Rex. I'm a technologist, engineer, and writer.</p>
 			<p>
@@ -239,17 +268,6 @@
 					</div>
 				</li>
 			{/each}
-		</ul>
-	</div>
-
-	<div class="mt-12 space-y-1">
-		<h2 class="text-lg font-semibold">Links</h2>
-		<ul class="list-inside list-disc">
-			<li>Substack: <a href="https://rexledesma.substack.com">@rexledesma</a></li>
-			<li>X: <a href="https://x.com/rexrledesma">@rexrledesma</a></li>
-			<li>GitHub: <a href="https://github.com/rexledesma">@rexledesma</a></li>
-			<li>Strava: <a href="https://www.strava.com/athletes/rexledesma">@rexledesma</a></li>
-			<li>Email: <a href="mailto:rex.ledesma1@gmail.com">rex.ledesma1@gmail.com</a></li>
 		</ul>
 	</div>
 </div>
