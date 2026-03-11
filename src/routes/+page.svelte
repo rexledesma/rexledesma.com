@@ -245,7 +245,7 @@
 			<p data-fade-block>
 				My other interests include reading, running, and cycling. I run for <a
 					href="https://centralparktc.org/">Central Park Track Club</a>
-				and I work at the <a href="https://www.foodcoop.com/">Park Slope Food Coop</a>.
+				and I'm a member of the <a href="https://www.foodcoop.com/">Park Slope Food Coop</a>.
 			</p>
 		</div>
 	</div>
