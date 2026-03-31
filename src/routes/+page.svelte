@@ -211,10 +211,12 @@
 		<div class="space-y-4 leading-relaxed">
 			<p data-fade-block>Hi, I'm Rex. I'm a technologist, engineer, and writer.</p>
 			<p data-fade-block>
-				I'm currently a programming resident at the <a
+				I'm currently an engineer at <a href="https://poolside.ai">Poolside</a>, building data
+				platform infrastructure for foundation model pre-training. Before, I was a programming
+				resident at the <a
 					href="https://www.recurse.com/scout/click?t=316374a3f07c2a30d4a9dfad7fa59452"
 					>Recurse Center</a
-				>. Before, I was an engineer at <a href="https://www.dagster.io">Dagster Labs</a>.
+				>, and was an engineer at <a href="https://www.dagster.io">Dagster Labs</a>.
 			</p>
 			<p data-fade-block>
 				I write <a href="https://rexledesma.substack.com">Referents</a>, a personal newsletter in
@@ -222,12 +224,6 @@
 				reform has been recognized by <a href="https://fwd.us">FWD.us</a> and the
 				<a href="https://x.com/VP46Archive/status/1669343317145051137"
 					>former presidential administration</a
-				>.
-			</p>
-			<p data-fade-block>
-				I'm also running for the 2026 board of directors election at the Park Slope Food Coop. Here
-				is my <a href="https://rexledesma.substack.com/p/running-for-the-2026-park-slope-food"
-					>candidate statement</a
 				>.
 			</p>
 			<p data-fade-block>
