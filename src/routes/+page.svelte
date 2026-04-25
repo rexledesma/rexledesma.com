@@ -211,8 +211,10 @@
 		<div class="space-y-4 leading-relaxed">
 			<p data-fade-block>Hi, I'm Rex. I'm a technologist, engineer, and writer.</p>
 			<p data-fade-block>
-				I'm currently an engineer at <a href="https://poolside.ai">Poolside</a>, building data
-				platform infrastructure for foundation model pre-training. Before, I was a programming
+				I'm currently an engineer at <a href="https://poolside.ai">Poolside</a>, focusing on
+				researcher developer productivity and building out our <a
+					href="https://poolside.ai/blog/introducing-the-model-factory">model factory</a
+				>. Before, I was a programming
 				resident at the <a
 					href="https://www.recurse.com/scout/click?t=316374a3f07c2a30d4a9dfad7fa59452"
 					>Recurse Center</a
