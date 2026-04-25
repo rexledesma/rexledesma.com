@@ -218,7 +218,7 @@
 				resident at the <a
 					href="https://www.recurse.com/scout/click?t=316374a3f07c2a30d4a9dfad7fa59452"
 					>Recurse Center</a
-				>, and was an engineer at <a href="https://www.dagster.io">Dagster Labs</a>.
+				> and an engineer at <a href="https://www.dagster.io">Dagster Labs</a>.
 			</p>
 			<p data-fade-block>
 				I write <a href="https://rexledesma.substack.com">Referents</a>, a personal newsletter in
@@ -233,17 +233,16 @@
 				<a href="https://asana.com/">Asana</a>, and <a href="https://facebook.com">Facebook</a>.
 				Prior to that, I graduated from the University of Maryland
 				<em>summa cum laude</em>
-				with honors as a
+				as a
 				<a href="https://www.jkcf.org/our-scholarships/college-scholarship-program/"
 					>Jack Kent Cooke Scholar</a
-				>. I was a teaching assistant for classes in machine learning and algorithms and was
-				director of Bitcamp (<a href="https://2017.bit.camp/">2017</a>,
+				>. I was a teaching assistant for classes in machine learning and algorithms, and directed Bitcamp (<a href="https://2017.bit.camp/">2017</a>,
 				<a href="https://2018.bit.camp/">2018</a>).
 			</p>
 			<p data-fade-block>
 				My other interests include reading, running, and cycling. I run for <a
 					href="https://centralparktc.org/">Central Park Track Club</a>
-				and I'm a member of the <a href="https://www.foodcoop.com/">Park Slope Food Coop</a>.
+				and am a member of the <a href="https://www.foodcoop.com/">Park Slope Food Coop</a>.
 			</p>
 		</div>
 	</div>
