@@ -25,6 +25,14 @@
 
 	const artifacts: Artifact[] = [
 		{
+			id: 'laguna-deeper-dive',
+			title: 'Laguna XS.2 and M.1: A Deeper Dive',
+			href: 'https://poolside.ai/blog/laguna-a-deeper-dive',
+			year: 2026,
+			sortDate: '2026-04-01',
+			meta: 'Apr 2026, Project'
+		},
+		{
 			id: 'dagster',
 			title: 'Dagster',
 			href: 'https://dagster.io',
