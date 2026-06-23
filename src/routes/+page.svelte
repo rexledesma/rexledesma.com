@@ -220,7 +220,7 @@
 			<p data-fade-block>Hi, I'm Rex. I'm a technologist, engineer, and writer.</p>
 			<p data-fade-block>
 				I'm currently an engineer at <a href="https://poolside.ai">Poolside</a>, focusing on
-				researcher developer productivity and building out our <a
+				research infrastructure and building out our <a
 					href="https://poolside.ai/blog/introducing-the-model-factory">model factory</a
 				>. Before, I was a programming
 				resident at the <a
