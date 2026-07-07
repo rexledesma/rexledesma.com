@@ -13,7 +13,7 @@
 
 	const profileLinks = [
 		{ label: 'Email', href: 'mailto:rex.r.ledesma@gmail.com', text: 'rex.r.ledesma@gmail.com' },
-		{ label: 'X', href: 'https://x.com/rexrledesma', text: '@rexrledesma' },
+		{ label: 'X', href: 'https://x.com/rexledesma', text: '@rexledesma' },
 		{ label: 'GitHub', href: 'https://github.com/rexledesma', text: '@rexledesma' },
 		{
 			label: 'Strava',

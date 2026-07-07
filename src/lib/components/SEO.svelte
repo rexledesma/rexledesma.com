@@ -36,8 +36,8 @@
 
 	<!-- Twitter -->
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:site" content="@rexrledesma" />
-	<meta name="twitter:creator" content="@rexrledesma" />
+	<meta name="twitter:site" content="@rexledesma" />
+	<meta name="twitter:creator" content="@rexledesma" />
 	<meta name="twitter:title" content={fullTitle} />
 	<meta name="twitter:description" content={description} />
 	<meta name="twitter:image" content={image} />
