@@ -30,7 +30,7 @@
 			href: 'https://poolside.ai/blog/laguna-a-deeper-dive',
 			year: 2026,
 			sortDate: '2026-04-01',
-			meta: 'Apr 2026, Project'
+			meta: 'Apr 2026'
 		},
 		{
 			id: 'dagster',
@@ -38,7 +38,7 @@
 			href: 'https://dagster.io',
 			year: 2024,
 			sortDate: '2024-10-01',
-			meta: 'Oct 2024, Project',
+			meta: 'Oct 2024',
 			metaLinks: [{ label: 'GitHub', href: 'https://github.com/dagster-io/dagster' }]
 		},
 		{
@@ -47,7 +47,7 @@
 			href: 'https://foodcoop.news',
 			year: 2026,
 			sortDate: '2026-01-01',
-			meta: 'Jan 2026, Project',
+			meta: 'Jan 2026',
 			metaLinks: [{ label: 'GitHub', href: 'https://github.com/rexledesma/foodcoop.news' }]
 		},
 		{
@@ -56,7 +56,7 @@
 			href: 'https://rexledesma.substack.com/p/running-for-the-2026-park-slope-food',
 			year: 2026,
 			sortDate: '2026-02-01',
-			meta: 'Feb 2026, Writing',
+			meta: 'Feb 2026',
 			metaLinks: [
 				{
 					label: "Linewaiters' Gazette",
@@ -70,7 +70,7 @@
 			href: 'https://rexledesma.substack.com/p/beginning-again',
 			year: 2025,
 			sortDate: '2025-06-01',
-			meta: 'Jun 2025, Writing'
+			meta: 'Jun 2025'
 		},
 		{
 			id: 'forgotten-dreams',
@@ -78,7 +78,7 @@
 			href: 'https://rexledesma.substack.com/p/forgotten-dreams',
 			year: 2022,
 			sortDate: '2022-12-01',
-			meta: 'Dec 2022, Writing'
+			meta: 'Dec 2022'
 		},
 		{
 			id: 'reinterpretations-irca',
@@ -86,7 +86,7 @@
 			href: 'https://rexledesma.substack.com/p/reinterpretations-of-irca',
 			year: 2022,
 			sortDate: '2022-12-01',
-			meta: 'Dec 2022, Writing',
+			meta: 'Dec 2022',
 			metaLinks: [
 				{
 					label: 'r/DACA',
@@ -108,7 +108,7 @@
 			href: 'https://rexledesma.substack.com/p/the-journey-before-the-law',
 			year: 2022,
 			sortDate: '2022-10-01',
-			meta: 'Oct 2022, Writing'
+			meta: 'Oct 2022'
 		},
 		{
 			id: 'dagster-catalog',
@@ -116,7 +116,7 @@
 			href: 'https://dagster.io/blog/dagster-plus-calatog-a-new-built-in-asset-library',
 			year: 2024,
 			sortDate: '2024-04-01',
-			meta: 'Apr 2024, Project',
+			meta: 'Apr 2024',
 			metaLinks: [{ label: 'Livestream', href: 'https://www.youtube.com/watch?v=_ZCYHUOd56o' }]
 		},
 		{
@@ -125,7 +125,7 @@
 			href: 'https://dagster.io/blog/orchestrating-dbt-with-dagster',
 			year: 2023,
 			sortDate: '2023-08-01',
-			meta: 'Aug 2023, Project',
+			meta: 'Aug 2023',
 			metaLinks: [{ label: 'Livestream', href: 'https://www.youtube.com/watch?v=yv97Xgbwwmo' }]
 		},
 		{
@@ -134,7 +134,7 @@
 			href: 'https://x.com/VP46Archive/status/1669343317145051137',
 			year: 2023,
 			sortDate: '2023-06-01',
-			meta: 'Jun 2023, Press',
+			meta: 'Jun 2023',
 			metaLinks: [
 				{
 					label: 'ABC News',
@@ -148,7 +148,7 @@
 			href: 'https://www.jkcf.org/our-stories/december-2022-newsletter/',
 			year: 2022,
 			sortDate: '2022-12-01',
-			meta: 'Dec 2022, Press'
+			meta: 'Dec 2022'
 		},
 		{
 			id: 'pricing-philosophy',
@@ -156,7 +156,7 @@
 			href: 'https://web.archive.org/web/20221005014539/https://dagster.io/blog/dagster-cloud-pricing-philosophy',
 			year: 2022,
 			sortDate: '2022-08-01',
-			meta: 'Aug 2022, Project',
+			meta: 'Aug 2022',
 			metaLinks: [{ label: 'Livestream', href: 'https://www.youtube.com/watch?v=70c84LDZuzQ' }]
 		}
 	];
