@@ -31,7 +31,8 @@
 			id: 'laguna-s-2-1',
 			title: 'Introducing Laguna S 2.1',
 			href: 'https://poolside.ai/blog/introducing-laguna-s-2-1',
-			date: '2026-07-21'
+			date: '2026-07-21',
+			metaLinks: [{ label: 'Hacker News', href: 'https://news.ycombinator.com/item?id=48995261' }]
 		},
 		{
 			id: 'laguna-xs-2-1',
