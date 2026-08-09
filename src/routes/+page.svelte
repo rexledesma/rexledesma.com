@@ -14,6 +14,11 @@
 		{ label: 'X', href: 'https://x.com/rexledesma', text: '@rexledesma' },
 		{ label: 'GitHub', href: 'https://github.com/rexledesma', text: '@rexledesma' },
 		{
+			label: 'Scholar',
+			href: 'https://scholar.google.com/citations?user=V-eNFgkAAAAJ',
+			text: '@rexledesma'
+		},
+		{
 			label: 'Strava',
 			href: 'https://www.strava.com/athletes/rexledesma',
 			text: '@rexledesma'
@@ -22,6 +27,18 @@
 	];
 
 	const artifacts: Artifact[] = [
+		{
+			id: 'laguna-s-2-1',
+			title: 'Introducing Laguna S 2.1',
+			href: 'https://poolside.ai/blog/introducing-laguna-s-2-1',
+			date: '2026-07-21'
+		},
+		{
+			id: 'laguna-xs-2-1',
+			title: 'Introducing Laguna XS 2.1',
+			href: 'https://poolside.ai/blog/introducing-laguna-xs-2-1',
+			date: '2026-07-02'
+		},
 		{
 			id: 'laguna-deeper-dive',
 			title: 'Laguna XS.2 and M.1: A Deeper Dive',
@@ -37,6 +54,10 @@
 				{
 					label: "Linewaiters' Gazette",
 					href: 'https://linewaitersgazette.com/2026/03/03/board-candidates-who-they-are-and-why-theyre-running/'
+				},
+				{
+					label: 'Election Results',
+					href: 'https://linewaitersgazette.com/2026/07/28/taylor-pate-wins-board-seat-defeating-coop-co-founder-joe-holtz/'
 				}
 			]
 		},
