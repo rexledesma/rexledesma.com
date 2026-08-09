@@ -5,9 +5,7 @@
 		id: string;
 		title: string;
 		href: string;
-		year: number;
-		sortDate: string;
-		meta: string;
+		date: string;
 		metaLinks?: { label: string; href: string }[];
 	};
 
@@ -28,35 +26,27 @@
 			id: 'laguna-deeper-dive',
 			title: 'Laguna XS.2 and M.1: A Deeper Dive',
 			href: 'https://poolside.ai/blog/laguna-a-deeper-dive',
-			year: 2026,
-			sortDate: '2026-04-01',
-			meta: 'Apr 2026'
+			date: '2026-04-28'
 		},
 		{
 			id: 'dagster',
 			title: 'Dagster',
 			href: 'https://dagster.io',
-			year: 2024,
-			sortDate: '2024-10-01',
-			meta: 'Oct 2024',
+			date: '2024-10-01',
 			metaLinks: [{ label: 'GitHub', href: 'https://github.com/dagster-io/dagster' }]
 		},
 		{
 			id: 'foodcoop-news',
 			title: 'Foodcoop News',
 			href: 'https://foodcoop.news',
-			year: 2026,
-			sortDate: '2026-01-01',
-			meta: 'Jan 2026',
+			date: '2026-01-14',
 			metaLinks: [{ label: 'GitHub', href: 'https://github.com/rexledesma/foodcoop.news' }]
 		},
 		{
 			id: 'running-for-park-slope-food-coop',
 			title: 'Running for the 2026 Park Slope Food Coop Board of Directors',
 			href: 'https://rexledesma.substack.com/p/running-for-the-2026-park-slope-food',
-			year: 2026,
-			sortDate: '2026-02-01',
-			meta: 'Feb 2026',
+			date: '2026-03-01',
 			metaLinks: [
 				{
 					label: "Linewaiters' Gazette",
@@ -68,25 +58,19 @@
 			id: 'beginning-again',
 			title: 'Beginning Again',
 			href: 'https://rexledesma.substack.com/p/beginning-again',
-			year: 2025,
-			sortDate: '2025-06-01',
-			meta: 'Jun 2025'
+			date: '2025-06-19'
 		},
 		{
 			id: 'forgotten-dreams',
 			title: 'Forgotten Dreams Beyond DACA',
 			href: 'https://rexledesma.substack.com/p/forgotten-dreams',
-			year: 2022,
-			sortDate: '2022-12-01',
-			meta: 'Dec 2022'
+			date: '2022-12-15'
 		},
 		{
 			id: 'reinterpretations-irca',
 			title: 'Reinterpretations of IRCA',
 			href: 'https://rexledesma.substack.com/p/reinterpretations-of-irca',
-			year: 2022,
-			sortDate: '2022-12-01',
-			meta: 'Dec 2022',
+			date: '2022-12-03',
 			metaLinks: [
 				{
 					label: 'r/DACA',
@@ -106,35 +90,27 @@
 			id: 'journey-before-law',
 			title: 'The Journey Before the Law',
 			href: 'https://rexledesma.substack.com/p/the-journey-before-the-law',
-			year: 2022,
-			sortDate: '2022-10-01',
-			meta: 'Oct 2022'
+			date: '2022-10-02'
 		},
 		{
 			id: 'dagster-catalog',
 			title: 'Dagster+ Catalog: A New Built-in Asset Library',
 			href: 'https://dagster.io/blog/dagster-plus-calatog-a-new-built-in-asset-library',
-			year: 2024,
-			sortDate: '2024-04-01',
-			meta: 'Apr 2024',
+			date: '2024-04-17',
 			metaLinks: [{ label: 'Livestream', href: 'https://www.youtube.com/watch?v=_ZCYHUOd56o' }]
 		},
 		{
 			id: 'orchestrating-dbt',
 			title: 'Orchestrating dbt with Dagster',
 			href: 'https://dagster.io/blog/orchestrating-dbt-with-dagster',
-			year: 2023,
-			sortDate: '2023-08-01',
-			meta: 'Aug 2023',
+			date: '2023-08-01',
 			metaLinks: [{ label: 'Livestream', href: 'https://www.youtube.com/watch?v=yv97Xgbwwmo' }]
 		},
 		{
 			id: 'daca-anniversary',
 			title: 'Celebrating the 11th Anniversary of DACA with Kamala Harris',
 			href: 'https://x.com/VP46Archive/status/1669343317145051137',
-			year: 2023,
-			sortDate: '2023-06-01',
-			meta: 'Jun 2023',
+			date: '2023-06-15',
 			metaLinks: [
 				{
 					label: 'ABC News',
@@ -146,31 +122,31 @@
 			id: 'alumni-profile',
 			title: 'Alumni Profile: Rex Ledesma',
 			href: 'https://www.jkcf.org/our-stories/december-2022-newsletter/',
-			year: 2022,
-			sortDate: '2022-12-01',
-			meta: 'Dec 2022'
+			date: '2022-12-16'
 		},
 		{
 			id: 'pricing-philosophy',
 			title: 'Our Pricing Philosophy for Dagster Cloud',
 			href: 'https://web.archive.org/web/20221005014539/https://dagster.io/blog/dagster-cloud-pricing-philosophy',
-			year: 2022,
-			sortDate: '2022-08-01',
-			meta: 'Aug 2022',
+			date: '2022-08-09',
 			metaLinks: [{ label: 'Livestream', href: 'https://www.youtube.com/watch?v=70c84LDZuzQ' }]
 		}
 	];
 
 	const sortedArtifacts = artifacts
 		.slice()
-		.sort((a, b) => new Date(b.sortDate).getTime() - new Date(a.sortDate).getTime());
+		.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
+	function getYear(date: string) {
+		return new Date(date).getUTCFullYear();
+	}
 
 	function shouldShowYear(index: number) {
 		if (index === 0) {
 			return true;
 		}
 
-		return sortedArtifacts[index - 1].year !== sortedArtifacts[index].year;
+		return getYear(sortedArtifacts[index - 1].date) !== getYear(sortedArtifacts[index].date);
 	}
 
 	function shouldInsetDivider(index: number) {
@@ -178,7 +154,7 @@
 			return false;
 		}
 
-		return sortedArtifacts[index].year === sortedArtifacts[index + 1].year;
+		return getYear(sortedArtifacts[index].date) === getYear(sortedArtifacts[index + 1].date);
 	}
 
 	function resolveHref(href: string) {
@@ -187,6 +163,14 @@
 		}
 
 		return new URL(href, 'https://rexledesma.com').toString();
+	}
+
+	function formatDate(date: string) {
+		return new Intl.DateTimeFormat('en-US', {
+			month: 'short',
+			day: '2-digit',
+			timeZone: 'UTC'
+		}).format(new Date(date));
 	}
 </script>
 
@@ -205,11 +189,11 @@
 				class="w-24 shrink-0 sm:w-48" />
 			<div class="min-w-0 flex-1 pt-1">
 				<ul class="space-y-1">
-					{#each profileLinks as link}
+					{#each profileLinks as link (link.href)}
 						<li class="flex items-baseline gap-3 leading-snug">
 							<div class="w-18 shrink-0 text-black/55">{link.label}</div>
 							<div class="min-w-0 flex-1">
-								<a href={link.href}>{link.text}</a>
+								<a href={link.href} rel="external">{link.text}</a>
 							</div>
 						</li>
 					{/each}
@@ -259,24 +243,33 @@
 		<h2 class="text-lg font-semibold">Artifacts</h2>
 		<ul class="border-y border-black/15">
 			{#each sortedArtifacts as artifact, index (index)}
-				<li class="relative px-0 py-2">
+				<li class="relative px-0 py-3">
 					<div class="flex items-baseline gap-4">
-						<div class="w-12 shrink-0 text-black/55 tabular-nums">
-							{#if shouldShowYear(index)}{artifact.year}{/if}
+						<div class="w-12 shrink-0 font-mono text-black/55 tabular-nums">
+							{#if shouldShowYear(index)}{getYear(artifact.date)}{/if}
 						</div>
-						<div class="min-w-0 flex-1">
-							<a href={resolveHref(artifact.href)} class="text-left underline">
-								{artifact.title}
-							</a>
-							<small class="block text-black/60">
-								{artifact.meta}
+						<div class="flex min-w-0 flex-1 items-center gap-4">
+							<div class="min-w-0 flex-1">
+								<a
+									href={resolveHref(artifact.href)}
+									rel="external"
+									class="text-left underline">
+									{artifact.title}
+								</a>
 								{#if artifact.metaLinks?.length}
-									{#each artifact.metaLinks as link}
-										{' · '}
-										<a href={resolveHref(link.href)}>{link.label}</a>
-									{/each}
+									<small class="block text-black/60">
+										{#each artifact.metaLinks as link, linkIndex (link.href)}
+											{#if linkIndex > 0} · {/if}
+											<a href={resolveHref(link.href)} rel="external">{link.label}</a>
+										{/each}
+									</small>
 								{/if}
-							</small>
+							</div>
+							<time
+								datetime={artifact.date}
+								class="shrink-0 font-mono text-sm text-black/60 tabular-nums">
+								{formatDate(artifact.date)}
+							</time>
 						</div>
 					</div>
 					{#if index < sortedArtifacts.length - 1}
