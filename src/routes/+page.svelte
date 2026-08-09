@@ -29,20 +29,6 @@
 			date: '2026-04-28'
 		},
 		{
-			id: 'dagster',
-			title: 'Dagster',
-			href: 'https://dagster.io',
-			date: '2024-10-01',
-			metaLinks: [{ label: 'GitHub', href: 'https://github.com/dagster-io/dagster' }]
-		},
-		{
-			id: 'foodcoop-news',
-			title: 'Foodcoop News',
-			href: 'https://foodcoop.news',
-			date: '2026-01-14',
-			metaLinks: [{ label: 'GitHub', href: 'https://github.com/rexledesma/foodcoop.news' }]
-		},
-		{
 			id: 'running-for-park-slope-food-coop',
 			title: 'Running for the 2026 Park Slope Food Coop Board of Directors',
 			href: 'https://rexledesma.substack.com/p/running-for-the-2026-park-slope-food',
@@ -55,42 +41,24 @@
 			]
 		},
 		{
+			id: 'foodcoop-news',
+			title: 'Foodcoop News',
+			href: 'https://foodcoop.news',
+			date: '2026-01-14',
+			metaLinks: [{ label: 'GitHub', href: 'https://github.com/rexledesma/foodcoop.news' }]
+		},
+		{
 			id: 'beginning-again',
 			title: 'Beginning Again',
 			href: 'https://rexledesma.substack.com/p/beginning-again',
 			date: '2025-06-19'
 		},
 		{
-			id: 'forgotten-dreams',
-			title: 'Forgotten Dreams Beyond DACA',
-			href: 'https://rexledesma.substack.com/p/forgotten-dreams',
-			date: '2022-12-15'
-		},
-		{
-			id: 'reinterpretations-irca',
-			title: 'Reinterpretations of IRCA',
-			href: 'https://rexledesma.substack.com/p/reinterpretations-of-irca',
-			date: '2022-12-03',
-			metaLinks: [
-				{
-					label: 'r/DACA',
-					href: 'https://www.reddit.com/r/DACA/comments/zblm00/new_legal_scholarship_says_state_entities_like/'
-				},
-				{
-					label: 'r/ucla',
-					href: 'https://www.reddit.com/r/ucla/comments/zcig5j/new_legal_scholarship_from_ucla_says_state/'
-				},
-				{
-					label: 'r/berkeley',
-					href: 'https://www.reddit.com/r/berkeley/comments/zctp5u/new_legal_scholarship_from_ucla_says_state/'
-				}
-			]
-		},
-		{
-			id: 'journey-before-law',
-			title: 'The Journey Before the Law',
-			href: 'https://rexledesma.substack.com/p/the-journey-before-the-law',
-			date: '2022-10-02'
+			id: 'dagster',
+			title: 'Dagster',
+			href: 'https://dagster.io',
+			date: '2024-10-01',
+			metaLinks: [{ label: 'GitHub', href: 'https://github.com/dagster-io/dagster' }]
 		},
 		{
 			id: 'dagster-catalog',
@@ -123,6 +91,38 @@
 			title: 'Alumni Profile: Rex Ledesma',
 			href: 'https://www.jkcf.org/our-stories/december-2022-newsletter/',
 			date: '2022-12-16'
+		},
+		{
+			id: 'forgotten-dreams',
+			title: 'Forgotten Dreams Beyond DACA',
+			href: 'https://rexledesma.substack.com/p/forgotten-dreams',
+			date: '2022-12-15'
+		},
+		{
+			id: 'reinterpretations-irca',
+			title: 'Reinterpretations of IRCA',
+			href: 'https://rexledesma.substack.com/p/reinterpretations-of-irca',
+			date: '2022-12-03',
+			metaLinks: [
+				{
+					label: 'r/DACA',
+					href: 'https://www.reddit.com/r/DACA/comments/zblm00/new_legal_scholarship_says_state_entities_like/'
+				},
+				{
+					label: 'r/ucla',
+					href: 'https://www.reddit.com/r/ucla/comments/zcig5j/new_legal_scholarship_from_ucla_says_state/'
+				},
+				{
+					label: 'r/berkeley',
+					href: 'https://www.reddit.com/r/berkeley/comments/zctp5u/new_legal_scholarship_from_ucla_says_state/'
+				}
+			]
+		},
+		{
+			id: 'journey-before-law',
+			title: 'The Journey Before the Law',
+			href: 'https://rexledesma.substack.com/p/the-journey-before-the-law',
+			date: '2022-10-02'
 		},
 		{
 			id: 'pricing-philosophy',
