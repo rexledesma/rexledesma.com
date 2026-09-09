@@ -225,14 +225,14 @@
 		<div class="space-y-4 leading-relaxed">
 			<p data-fade-block>Hi, I'm Rex. I'm a technologist, engineer, and writer.</p>
 			<p data-fade-block>
-				I'm currently an engineer at <a href="https://poolside.ai">Poolside</a>, focusing on
-				research infrastructure and building out our <a
-					href="https://poolside.ai/blog/introducing-the-model-factory">model factory</a
-				>. Before, I was a programming
-				resident at the <a
-					href="https://www.recurse.com/scout/click?t=316374a3f07c2a30d4a9dfad7fa59452"
-					>Recurse Center</a
-				> and an engineer at <a href="https://www.dagster.io">Dagster Labs</a>.
+				I'm currently an engineer at <a href="https://www.nvidia.com">NVIDIA</a>. Before, I was an
+				engineer at <a href="https://poolside.ai">Poolside</a>, focusing on research infrastructure
+				and building out its
+				<a href="https://poolside.ai/blog/introducing-the-model-factory">model factory</a>. I was also
+				a programming resident at the
+				<a href="https://www.recurse.com/scout/click?t=316374a3f07c2a30d4a9dfad7fa59452"
+					>Recurse Center</a>
+				and an engineer at <a href="https://www.dagster.io">Dagster Labs</a>.
 			</p>
 			<p data-fade-block>
 				I write <a href="https://rexledesma.substack.com">Referents</a>, a personal newsletter in
